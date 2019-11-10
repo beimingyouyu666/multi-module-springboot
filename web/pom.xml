@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>multi-module-springboot</artifactId>
+        <groupId>com.yangk</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--改成war包形式，默认是jar-->
+    <!--<packaging>war</packaging>-->
+
+    <artifactId>web</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>com.yangk</groupId>
+            <artifactId>repository</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <!--<configuration>-->
+                    <!--<mainClass>com.yangk.multimodulespringboot.MultiModuleSpringbootApplication</mainClass>-->
+                <!--</configuration>-->
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>
